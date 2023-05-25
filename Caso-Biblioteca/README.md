@@ -11,5 +11,5 @@ aparecer "y otros".
 # Diagrama de clases
 ![Diagrama de Clases](diagrama.png "Diagrama de Clases")
 
-# Capturas de pantalla
-
+# Capturas de pantalla de la interfaz
+![interfaz](interfaz.jpeg "interfaz")
