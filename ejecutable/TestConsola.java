@@ -7,18 +7,18 @@ public class TestConsola {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("\nPor favor ingrese  datos del libro:\n");
+        System.out.println("\nPor favor ingrese los datos del libro:\n");
 
-        System.out.print("Título: ");
+        System.out.print("Título = : ");
         String titulo = scanner.nextLine();
 
-        System.out.print("Autor principal: ");
+        System.out.print("Autor principal =: ");
         String autor = scanner.nextLine();
 
-        System.out.print("Segundo autor: ");
+        System.out.print("Segundo autor =:");
         String autor2 = scanner.nextLine();
 
-        System.out.print("Año de edición: ");
+        System.out.print("Año de edición =: ");
         String añoEdicion = scanner.nextLine();
 
         System.out.print("Es de lujo? (si/no): ");

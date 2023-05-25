@@ -9,3 +9,8 @@ si se trata de un libro con mas de dos autores quiere guardar el primer autor, y
 aparecer "y otros".
 
 # Diagrama de clases
+![Diagrama de Clases](diagrama.png "Diagrama de Clases")
+
+
+# Capturas de pantalla
+

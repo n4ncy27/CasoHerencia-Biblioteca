@@ -6,6 +6,8 @@ import javax.swing.JTextArea;
 import javax.swing.JScrollPane;
 import java.awt.Color;
 import java.awt.Font;
+import javax.swing.border.TitledBorder;
+
 
 public class PanelSalida extends JPanel {
         public static JTextArea taResultados;
@@ -22,8 +24,13 @@ public class PanelSalida extends JPanel {
                 spResultados = new JScrollPane(taResultados);
                 spResultados.setBounds(9, 15, 512, 130);
 
+                //Borde y titulo del panel
+               TitledBorder borde = BorderFactory.createTitledBorder("Resultados");
+               borde.setTitleColor(Color.WHITE);
+               this.setBorder(borde);
+
                 this.setLayout(null);
-                this.setBackground(Color.decode(" #FFFFFF,"));
+                this.setBackground(Color.decode("#98715d"));
                 this.setVisible(true);
                 this.add(spResultados);
         }

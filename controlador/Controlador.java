@@ -1,8 +1,5 @@
 package controlador;
 
-import modelo.Biblioteca;
-import modelo.Libro;
-import modelo.LibroColeccion;
 import vista.DialogoLibroColeccion;
 import vista.PanelEntrada;
 import vista.PanelSalida;
@@ -11,6 +8,10 @@ import vista.VentanaPrincipal;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
+
+import modelo.Biblioteca;
+import modelo.Libro;
+import modelo.LibroColeccion;
 
 public class Controlador implements ActionListener {
         private VentanaPrincipal miVentanaPrincipal;

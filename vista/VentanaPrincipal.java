@@ -18,7 +18,7 @@ public class VentanaPrincipal extends JFrame {
                 miPanelSalida = new PanelSalida();
                 miPanelSalida.setBounds(10, 330, 530, 160);
 
-                this.setTitle("Biblioteca señor Pérez");
+                this.setTitle("BIBLIOTECA DEL SEÑOR PEREZ");
                 this.setSize(558, 532);
                 this.setResizable(false);
                 this.setLocationRelativeTo(null);

@@ -11,6 +11,7 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import java.awt.Color;
 import java.awt.Font;
+import javax.swing.border.TitledBorder;
 
 public class PanelEntrada extends JPanel {
         private JLabel lbTitulo;
@@ -34,63 +35,66 @@ public class PanelEntrada extends JPanel {
                 lbTitulo.setBounds(0, 10, 558, 30);
 
                 lbNombreLibro = new JLabel("Nombre =");
-                lbNombreLibro.setFont(new Font("Serif", Font.PLAIN, 18));
+                lbNombreLibro.setFont(new Font("Algerian", Font.PLAIN, 18));
                 lbNombreLibro.setForeground(Color.BLACK);
                 lbNombreLibro.setBounds(230, 55, 480, 30);
 
                 tfNombreLibro = new JTextField();
                 tfNombreLibro.setFont(new Font("Arial", Font.PLAIN, 18));
-                tfNombreLibro.setForeground(Color.BLACK);
+                tfNombreLibro.setForeground(Color.BLUE);
                 tfNombreLibro.setBounds(330, 55, 190, 30);
 
                 lbNombreAutores = new JLabel("Autores =");
-                lbNombreAutores.setFont(new Font("Serif", Font.PLAIN, 18));
+                lbNombreAutores.setFont(new Font("Algerian", Font.PLAIN, 18));
                 lbNombreAutores.setForeground(Color.BLACK);
                 lbNombreAutores.setBounds(230, 95, 480, 30);
 
                 tfNombreAutores = new JTextField();
                 tfNombreAutores.setFont(new Font("Arial", Font.PLAIN, 18));
-                tfNombreAutores.setForeground(Color.BLACK);
+                tfNombreAutores.setForeground(Color.blue);
                 tfNombreAutores.setBounds(330, 95, 190, 30);
 
                 lbAnioEdicion = new JLabel("Año =");
-                lbAnioEdicion.setFont(new Font("Serif", Font.PLAIN, 18));
+                lbAnioEdicion.setFont(new Font("Algerian", Font.PLAIN, 18));
                 lbAnioEdicion.setForeground(Color.BLACK);
                 lbAnioEdicion.setBounds(230, 135, 480, 30);
 
                 tfAnioEdicion = new JTextField();
                 tfAnioEdicion.setFont(new Font("Arial", Font.PLAIN, 18));
-                tfAnioEdicion.setForeground(Color.BLACK);
+                tfAnioEdicion.setForeground(Color.BLUE);
                 tfAnioEdicion.setBounds(330, 135, 190, 30);
 
                 lbLibroDeLujo = new JLabel("Edición de lujo =");
-                lbLibroDeLujo.setFont(new Font("Serif", Font.PLAIN, 18));
+                lbLibroDeLujo.setFont(new Font("Algerian", Font.PLAIN, 18));
                 lbLibroDeLujo.setForeground(Color.BLACK);
                 lbLibroDeLujo.setBounds(230, 175, 480, 30);
 
                 bgEsLibroDeLujo = new ButtonGroup();
 
                 rbEsLibroDeLujo = new JRadioButton("Sí");
-                rbEsLibroDeLujo.setFont(new Font("Serif", Font.PLAIN, 18));
-                rbEsLibroDeLujo.setBackground(Color.decode("#eac435"));
-                rbEsLibroDeLujo.setBounds(390, 175, 50, 30);
+                rbEsLibroDeLujo.setFont(new Font("Arial", Font.PLAIN, 18));
+                rbEsLibroDeLujo.setBounds( 450, 177, 50, 30);
                 bgEsLibroDeLujo.add(rbEsLibroDeLujo);
 
                 rbNoEsLibroDeLujo = new JRadioButton("No");
-                rbNoEsLibroDeLujo.setFont(new Font("Serif", Font.PLAIN, 18));
-                rbNoEsLibroDeLujo.setBackground(Color.decode("#eac435"));
-                rbNoEsLibroDeLujo.setBounds(450, 175, 50, 30);
+                rbNoEsLibroDeLujo.setFont(new Font("Arial", Font.PLAIN, 18));
+                rbNoEsLibroDeLujo.setBounds(390, 177, 50, 30);
                 bgEsLibroDeLujo.add(rbNoEsLibroDeLujo);
 
-                iLogo = new ImageIcon("src/imgs/biblioteca.png");
+                iLogo = new ImageIcon("imgs/biblioteca.png");
 
                 lbLogo = new JLabel(iLogo);
                 lbLogo.setOpaque(true);
                 lbLogo.setBorder(BorderFactory.createRaisedBevelBorder());
                 lbLogo.setBounds(35, 50, 160, 160);
 
+                 //Borde y titulo del panel
+                TitledBorder borde = BorderFactory.createTitledBorder("Datos de Entrada");
+                borde.setTitleColor(Color.WHITE);
+                 this.setBorder(borde); 
+
                 this.setLayout(null);
-                this.setBackground(Color.decode("#eac435"));
+                this.setBackground(Color.decode("#98715d"));
                 this.setVisible(true);
                 this.add(lbTitulo);
                 this.add(lbNombreLibro);
@@ -126,7 +130,7 @@ public class PanelEntrada extends JPanel {
         }
 
         public static void borrarTf() {
-                JOptionPane.showMessageDialog(null, "Los datos serán borrados...", "Biblioteca señor Pérez",
+                JOptionPane.showMessageDialog(null, "Los datos serán borrados...", "Biblioteca del señor Pérez",
                                 JOptionPane.WARNING_MESSAGE);
                 tfNombreLibro.setText("");
                 tfNombreAutores.setText("");

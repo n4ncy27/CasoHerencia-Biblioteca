@@ -29,58 +29,67 @@ public class DialogoLibroColeccion extends JDialog {
 
         public DialogoLibroColeccion() {
                 lbNombreLibro = new JLabel("Nombre =");
+                // tipo de letre
+                lbNombreLibro.setFont(new Font("Arial Black", Font.PLAIN, 15));
                 lbNombreLibro.setBounds(10, 20, 140, 20);
 
                 tfNombreLibro = new JTextField();
                 tfNombreLibro.setBounds(150, 20, 100, 25);
 
                 lbNombreAutores = new JLabel("Autores =");
+                lbNombreAutores.setFont(new Font("Arial Black", Font.PLAIN, 15));
                 lbNombreAutores.setBounds(10, 50, 260, 25);
 
                 tfNombreAutores = new JTextField();
                 tfNombreAutores.setBounds(150, 50, 100, 25);
 
                 lbAnioEdicion = new JLabel("Año =");
+                lbAnioEdicion.setFont(new Font("Arial Black", Font.PLAIN, 15));
                 lbAnioEdicion.setBounds(10, 90, 140, 20);
 
                 tfAnioEdicion = new JTextField();
                 tfAnioEdicion.setBounds(150, 90, 100, 25);
 
                 lbLibroDeLujo = new JLabel("Edición de lujo = ");
+                lbLibroDeLujo.setFont(new Font("Arial Black", Font.PLAIN, 15));
                 lbLibroDeLujo.setBounds(10, 130, 140, 20);
 
                 bgEsLibroDeLujo = new ButtonGroup();
 
                 rbEsLibroDeLujo = new JRadioButton("Sí");
                 rbEsLibroDeLujo.setFont(new Font("Serif", Font.PLAIN, 18));
-                rbEsLibroDeLujo.setBackground(Color.decode("#eac435"));
+                rbEsLibroDeLujo.setBackground(Color.decode("#F4CCCC"));
                 rbEsLibroDeLujo.setBounds(150, 130, 50, 30);
                 bgEsLibroDeLujo.add(rbEsLibroDeLujo);
 
                 rbNoEsLibroDeLujo = new JRadioButton("No");
                 rbNoEsLibroDeLujo.setFont(new Font("Serif", Font.PLAIN, 18));
-                rbNoEsLibroDeLujo.setBackground(Color.decode("#eac435"));
+                rbNoEsLibroDeLujo.setBackground(Color.decode("#F4CCCC"));
                 rbNoEsLibroDeLujo.setBounds(200, 130, 50, 30);
                 bgEsLibroDeLujo.add(rbNoEsLibroDeLujo);
 
                 lbNombreColeccion = new JLabel("Nombre de colección =");
+                // tipo de letra
+                lbNombreColeccion.setFont(new Font("Arial Black", Font.PLAIN, 15));
                 lbNombreColeccion.setBounds(10, 170, 140, 20);
 
                 tfNombreColeccion = new JTextField();
                 tfNombreColeccion.setBounds(150, 170, 100, 25);
 
-                lbNumeroColeccion = new JLabel("Número de colección =");
-                lbNumeroColeccion.setBounds(10, 210, 140, 20);
+                lbNumeroColeccion = new JLabel("Número-de-colección =");
+                // tipo de letra
+                lbNumeroColeccion.setFont(new Font("Arial Black", Font.PLAIN, 15));
+                lbNumeroColeccion.setBounds(10, 208, 140, 20);
 
                 tfNumeroColeccion = new JTextField();
                 tfNumeroColeccion.setBounds(150, 210, 100, 25);
 
                 btnAgregarLibro = new JButton("Agregar");
-                btnAgregarLibro.setBounds(120, 240, 100, 25);
+                btnAgregarLibro.setBounds(10, 230, 100, 25);
                 btnAgregarLibro.setActionCommand("crearLibroColeccion");
 
                 this.setLayout(null);
-                this.getContentPane().setBackground(Color.decode("#eac435"));
+                this.getContentPane().setBackground(Color.decode("#98715d"));
                 this.setTitle("Agregar Libro de Colección");
                 this.setSize(300, 300);
                 this.setLocationRelativeTo(null);
